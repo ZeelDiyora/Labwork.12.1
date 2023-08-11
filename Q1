@@ -1,0 +1,51 @@
+#include <stdio.h>
+struct student{
+  int id;
+  char name;
+  int age;
+  int course;
+  int city;
+  int standard;
+  int school;
+};
+
+int main(){
+    int i,n;
+    
+    printf("How many students : ");
+    scanf("%d",&n);
+    
+    struct student s[n];
+    
+    for(i=0;i<n;i++)
+    {
+        printf("Enter Id : ");
+        scanf("%d",&s[i].id);
+        printf("Enter Name : ");
+        scanf("%s",&s[i].name);
+        printf("Enter Age : ");
+        scanf("%d",&s[i].age);
+        printf("Enter Course : ");
+        scanf("%d",&s[i].course);
+        printf("Enter City : ");
+        scanf("%d",&s[i].city);
+        printf("Enter Standard : ");
+        scanf("%d",&s[i].standard);
+        printf("Enter School : ");
+        scanf("%d",&s[i].school);
+
+    }
+    for(i=0;i<n;i++)
+    {
+        printf("Id : %d\n",s[i].id);
+        printf("Name : %d\n",s[i].name);
+        printf("Age : %d\n",s[i].age);
+        printf("Course: %d\n",s[i].course);
+        printf("City : %d\n",s[i].city);
+        printf("Standard : %d\n",s[i].standard);
+        printf("School : %d\n",s[i].school);
+    }
+    
+
+    return 0;
+}
